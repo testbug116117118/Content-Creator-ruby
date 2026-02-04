@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @template.name %> | <%= @user.profile.brand_name %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag 'public_templates' %>
+  <%= javascript_include_tag 'public_templates' %>
+</head>
+<body>
+  <div class="template-container">
+    <%= @rendered_content.html_safe %>
+  </div>
+  
+  <footer class="powered-by">
+    <small>Powered by <a href="/">CreatorSpace</a></small>
+  </footer>
+</body>
+</html>
